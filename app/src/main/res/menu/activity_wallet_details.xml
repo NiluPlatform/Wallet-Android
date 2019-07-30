@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_register_domain"
+        android:title="@string/register_domain" />
+    <item
+        android:id="@+id/action_export_mnemonics"
+        android:title="@string/export_mnemonics" />
+    <item
+        android:id="@+id/action_export_private_key"
+        android:title="@string/export_private_key" />
+    <item
+        android:id="@+id/action_export_keystore"
+        android:title="@string/export_keystore" />
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/delete_wallet" />
+</menu>

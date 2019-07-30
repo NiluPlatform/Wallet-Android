@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/networks"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_nilu"
+            android:title="@string/nilu" />
+        <item
+            android:id="@+id/nav_ethereum"
+            android:title="@string/ethereum" />
+        <item
+            android:id="@+id/nav_ropsten"
+            android:title="@string/ropsten" />
+        <item
+            android:id="@+id/nav_pirl"
+            android:title="@string/pirl" />
+        <item
+            android:id="@+id/nav_ether1"
+            android:title="@string/ether1" />
+    </group>
+
+    <group
+        android:id="@+id/misc"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_create_wallet"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="@string/create_wallet" />
+        <item
+            android:id="@+id/nav_create_erc20"
+            android:icon="@drawable/ic_create_erc20"
+            android:title="@string/create_erc20_token" />
+        <item
+            android:id="@+id/nav_get_app_id"
+            android:icon="@drawable/ic_app_id_black_24dp"
+            android:title="@string/get_app_id" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="@string/about" />
+    </group>
+</menu>

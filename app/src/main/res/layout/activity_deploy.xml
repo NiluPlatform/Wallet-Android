@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.tokens.creation.DeployActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:contentPaddingBottom="@dimen/spacing_normal"
+                app:contentPaddingLeft="@dimen/activity_horizontal_margin"
+                app:contentPaddingRight="@dimen/activity_horizontal_margin"
+                app:contentPaddingTop="@dimen/spacing_normal">
+
+                <ProgressBar
+                    android:id="@android:id/progress"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/deployInfoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/feeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:minHeight="48dp"
+                        android:text="@string/fee"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:drawable/divider_horizontal_bright" />
+
+                    <TextView
+                        android:id="@+id/creatorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="middle"
+                        android:gravity="start|center_vertical"
+                        android:minHeight="48dp"
+                        android:singleLine="true"
+                        android:text="@string/creator"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:drawable/divider_horizontal_bright" />
+
+                    <TextView
+                        android:id="@+id/nameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:minHeight="48dp"
+                        android:text="@string/name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:drawable/divider_horizontal_bright" />
+
+                    <TextView
+                        android:id="@+id/symbolText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:minHeight="48dp"
+                        android:text="@string/symbol"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:drawable/divider_horizontal_bright" />
+
+                    <TextView
+                        android:id="@+id/decimalsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:minHeight="48dp"
+                        android:text="@string/decimals"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:drawable/divider_horizontal_bright" />
+
+                    <TextView
+                        android:id="@+id/totalSupplyText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:minHeight="48dp"
+                        android:text="@string/total_supply"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:drawable/divider_horizontal_bright" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:minHeight="48dp"
+                        android:text="@string/data_colon"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                    <EditText
+                        android:id="@+id/dataText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background"
+                        android:cursorVisible="false"
+                        android:enabled="true"
+                        android:focusable="false"
+                        android:gravity="start"
+                        android:inputType="textMultiLine"
+                        android:lineSpacingExtra="2dp"
+                        android:lines="10"
+                        android:overScrollMode="always"
+                        android:padding="@dimen/spacing_micro"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#ffc66d"
+                        android:typeface="monospace" />
+
+                    <Button
+                        android:id="@+id/deployButton"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/spacing_micro"
+                        android:text="@string/deploy"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
