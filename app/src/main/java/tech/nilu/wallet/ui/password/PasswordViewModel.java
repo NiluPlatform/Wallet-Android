@@ -1,6 +1,6 @@
 package tech.nilu.wallet.ui.password;
 
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModel;
 
 import javax.inject.Inject;
 

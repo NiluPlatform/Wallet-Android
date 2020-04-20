@@ -3,10 +3,6 @@ package tech.nilu.wallet.ui.wallets;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.content.res.AppCompatResources;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -16,7 +12,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import tech.nilu.wallet.crypto.Eip55;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import org.web3j.utils.Convert;
 
 import java.text.SimpleDateFormat;
@@ -27,6 +27,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import tech.nilu.wallet.MainActivity;
 import tech.nilu.wallet.R;
+import tech.nilu.wallet.crypto.Eip55;
 import tech.nilu.wallet.db.entity.ContractInfo;
 import tech.nilu.wallet.db.entity.Network;
 import tech.nilu.wallet.repository.WalletBaseRepository;

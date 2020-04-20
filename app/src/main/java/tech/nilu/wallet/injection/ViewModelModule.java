@@ -1,21 +1,21 @@
 package tech.nilu.wallet.injection;
 
-import android.arch.lifecycle.ViewModel;
-import android.arch.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 
+import dagger.Binds;
+import dagger.Module;
+import dagger.multibindings.IntoMap;
 import tech.nilu.wallet.MainViewModel;
 import tech.nilu.wallet.ui.common.BaseViewModel;
 import tech.nilu.wallet.ui.faucet.FaucetViewModel;
 import tech.nilu.wallet.ui.password.PasswordViewModel;
 import tech.nilu.wallet.ui.send.transfer.TransferViewModel;
 import tech.nilu.wallet.ui.tokens.TokenViewModel;
-import tech.nilu.wallet.ui.wallets.WalletViewModel;
 import tech.nilu.wallet.ui.transactions.TransactionViewModel;
+import tech.nilu.wallet.ui.wallets.WalletViewModel;
 import tech.nilu.wallet.ui.wallets.nns.NNSViewModel;
 import tech.nilu.wallet.viewmodel.NiluViewModelFactory;
-import dagger.Binds;
-import dagger.Module;
-import dagger.multibindings.IntoMap;
 
 /**
  * Created by root on 1/7/18.

@@ -1,8 +1,9 @@
 package tech.nilu.wallet.repository;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
 import android.text.TextUtils;
+
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 import org.web3j.abi.FunctionEncoder;
 import org.web3j.abi.datatypes.Type;

@@ -1,6 +1,6 @@
 package tech.nilu.wallet.ui.common;
 
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModel;
 
 import java.util.List;
 

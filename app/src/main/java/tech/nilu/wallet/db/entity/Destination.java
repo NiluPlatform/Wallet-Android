@@ -1,7 +1,7 @@
 package tech.nilu.wallet.db.entity;
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 /**
  * Created by root on 1/30/18.

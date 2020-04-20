@@ -1,8 +1,8 @@
 package tech.nilu.wallet.repository;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 import org.web3j.abi.datatypes.Address;
 import org.web3j.crypto.Credentials;

@@ -1,8 +1,9 @@
 package tech.nilu.wallet.ui.wallets;
 
-import android.support.v7.widget.RecyclerView;
 import android.util.LongSparseArray;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.math.BigInteger;
 import java.util.ArrayList;

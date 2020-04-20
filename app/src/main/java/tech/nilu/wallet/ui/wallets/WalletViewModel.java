@@ -1,7 +1,7 @@
 package tech.nilu.wallet.ui.wallets;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModel;
 
 import org.web3j.crypto.CipherException;
 import org.web3j.crypto.Credentials;
@@ -209,7 +209,9 @@ public class WalletViewModel extends ViewModel {
         return walletBaseRepository.getKeystoreContent(wallet, parent);
     }
 
-    public Network getActiveNetwork() { return networkRepository.getActiveNetwork(); }
+    public Network getActiveNetwork() {
+        return networkRepository.getActiveNetwork();
+    }
 
     public Network getNetwork(long id) {
         return networkRepository.getNetwork(id);

@@ -3,13 +3,14 @@ package tech.nilu.wallet.ui.faucet;
 import android.app.ProgressDialog;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.text.Html;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.github.lzyzsd.circleprogress.ArcProgress;
 

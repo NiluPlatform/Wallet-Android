@@ -1,6 +1,6 @@
 package tech.nilu.wallet.util;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import org.spongycastle.util.encoders.Base64;
 import org.spongycastle.util.encoders.Hex;
@@ -107,6 +107,6 @@ public class SecurityUtils {
     private static String digits(long val, int digits) {
         long hi = 1L << (digits * 4);
         String ss = Long.toHexString(hi | (val & (hi - 1)));
-        return ss.substring(1, ss.length());
+        return ss.substring(1);
     }
 }

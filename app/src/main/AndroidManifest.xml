@@ -180,7 +180,7 @@
             android:label="Nilu Transfer Service" />
 
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="tech.nilu.wallet.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">

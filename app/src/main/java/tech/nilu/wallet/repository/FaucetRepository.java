@@ -1,8 +1,9 @@
 package tech.nilu.wallet.repository;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
 import android.util.Log;
+
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 import java.security.SecureRandom;
 import java.text.SimpleDateFormat;
@@ -62,7 +63,7 @@ public class FaucetRepository {
         int randomsChecksum = (randoms[0] + randoms[1] + randoms[2]) % 10;
         int checksum = (randoms[0] + randoms[1] + randoms[2] + randomsChecksum + amount) % 10;
         String date = new SimpleDateFormat("yyMMddHHmm", Locale.getDefault()).format(new Date());
-        String message = String.valueOf(randoms[0]) + String.valueOf(randoms[1]) + String.valueOf(randoms[2]) + randomsChecksum + "0" + String.valueOf(amount) + checksum + date + identifier;
+        String message = String.valueOf(randoms[0]) + randoms[1] + randoms[2] + randomsChecksum + "0" + amount + checksum + date + identifier;
         Log.d("FaucetRepository", "getFaucet: " + message);
         String hmac = SecurityUtils.createHmac(message);
         String magic = String.format(Locale.getDefault(), "%s%s%s%s0%s%s%s%s",

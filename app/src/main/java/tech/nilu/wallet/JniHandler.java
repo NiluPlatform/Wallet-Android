@@ -1,7 +1,8 @@
 package tech.nilu.wallet;
 
 import android.os.Build;
-import android.support.annotation.Keep;
+
+import androidx.annotation.Keep;
 
 public class JniHandler {
     @Keep

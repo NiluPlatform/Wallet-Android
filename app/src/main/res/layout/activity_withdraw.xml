@@ -16,7 +16,7 @@
         android:clipToPadding="false"
         android:scrollbarStyle="outsideOverlay">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -91,6 +91,6 @@
                     android:text="@string/withdraw"
                     android:textAllCaps="true" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
     </ScrollView>
 </LinearLayout>

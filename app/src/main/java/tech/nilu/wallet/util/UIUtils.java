@@ -3,13 +3,14 @@ package tech.nilu.wallet.util;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.res.Resources;
-import android.support.annotation.ColorInt;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
+import androidx.annotation.ColorInt;
 
 /**
  * Created by root on 11/12/17.

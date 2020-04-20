@@ -1,7 +1,7 @@
 package tech.nilu.wallet.ui.tokens;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModel;
 
 import org.web3j.crypto.Credentials;
 
